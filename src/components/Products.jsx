@@ -19,8 +19,8 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/product?category=${cat}`
-            : "http://localhost:5000/api/product"
+            ? `https://kaleidoscopic-bonbon-189445.netlify.app/?category=${cat}`
+            : "https://kaleidoscopic-bonbon-189445.netlify.app/"
         );
         setProducts(res.data);
       } catch (err) {}
