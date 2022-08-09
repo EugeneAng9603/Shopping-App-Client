@@ -182,7 +182,9 @@ const Cart = () => {
       } catch {}
     };
     stripeToken && makeRequest();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stripeToken, cart.total, history]);
+
   return (
     <Container>
       <Navbar />
@@ -192,7 +194,7 @@ const Cart = () => {
         <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>
           <TopTexts>
-            <TopText>Shopping Bag(2)</TopText>
+            <TopText>Shopping Bag </TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
           <TopButton type="filled">CHECKOUT NOW</TopButton>
